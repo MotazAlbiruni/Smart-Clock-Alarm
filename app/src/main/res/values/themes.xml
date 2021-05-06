@@ -1,0 +1,72 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SmartClockAlarm" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="Theme.DeskClock" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:colorBackgroundFloating" tools:targetApi="23">
+            ?attr/colorBackgroundFloating
+        </item>
+        <item name="android:navigationBarColor" tools:targetApi="21">?attr/colorPrimaryDark</item>
+        <item name="android:popupTheme" tools:targetApi="21">?attr/popupTheme</item>
+        <item name="android:timePickerStyle" tools:targetApi="21">@style/Widget.TimePicker</item>
+        <item name="android:windowBackground">@color/default_background</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <!-- Attributes from android.support.v7.appcompat -->
+        <item name="colorAccent">#ff5195ea</item>
+        <item name="colorBackgroundFloating">#303030</item>
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="colorControlNormal">?android:attr/textColorPrimary</item>
+        <item name="colorPrimaryDark">#66000000</item>
+        <item name="imageButtonStyle">@style/Widget.ImageButton</item>
+        <item name="popupTheme">@style/ThemeOverlay.Popup</item>
+    </style>
+
+    <style name="Theme.DeskClock.Settings">
+        <!-- Attributes from android.support.v7.appcompat -->
+        <item name="actionBarStyle">@style/Widget.ActionBar</item>
+        <item name="colorControlActivated">?attr/colorAccent</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+
+        <!-- Attributes from android.support.v7.preference -->
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+    </style>
+
+    <style name="Theme.DeskClock.RingtonePicker">
+        <!-- Attributes from android.support.v7.appcompat -->
+        <item name="actionBarStyle">@style/Widget.ActionBar</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+    </style>
+
+    <style name="Theme.DeskClock.CitySelection">
+        <!-- Attributes from android.support.v7.appcompat -->
+        <item name="actionBarStyle">@style/Widget.ActionBar.NoTitle</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+    </style>
+
+    <style name="ThemeOverlay.Control.Accent" parent="ThemeOverlay.AppCompat">
+        <!-- Attributes from android.support.v7.appcompat -->
+        <item name="colorControlActivated">?attr/colorAccent</item>
+    </style>
+
+    <style name="ThemeOverlay.Popup" parent="ThemeOverlay.AppCompat">
+        <item name="android:colorBackground">?attr/colorBackgroundFloating</item>
+    </style>
+
+</resources>
