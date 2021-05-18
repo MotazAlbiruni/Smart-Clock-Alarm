@@ -17,10 +17,10 @@
 package com.motazalbiruni.smartclockalarm.deskclock.data;
 
 import android.content.Context;
-import android.support.annotation.VisibleForTesting;
+import androidx.annotation.VisibleForTesting;
 import android.util.ArrayMap;
 
-import com.chen.deskclock.R;
+import com.motazalbiruni.smartclockalarm.R;
 
 import java.text.DateFormatSymbols;
 import java.util.Arrays;

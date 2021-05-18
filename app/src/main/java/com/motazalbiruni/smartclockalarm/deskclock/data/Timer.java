@@ -1,5 +1,4 @@
 package com.motazalbiruni.smartclockalarm.deskclock.data;
-
 import android.text.TextUtils;
 
 import java.util.Arrays;

@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2016 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.motazalbiruni.smartclockalarm.deskclock.data;
 
 import android.annotation.TargetApi;
@@ -25,24 +9,24 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Build;
 import android.os.SystemClock;
-import android.support.annotation.DrawableRes;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.content.ContextCompat;
+import androidx.annotation.DrawableRes;
+import androidx.core.app.NotificationCompat;
+import androidx.core.content.ContextCompat;
 import android.text.TextUtils;
 import android.widget.RemoteViews;
 
-import com.chen.deskclock.AlarmUtils;
-import com.chen.deskclock.R;
-import com.chen.deskclock.Utils;
-import com.chen.deskclock.events.Events;
-import com.chen.deskclock.timer.ExpiredTimersActivity;
-import com.chen.deskclock.timer.TimerService;
+import com.motazalbiruni.smartclockalarm.deskclock.AlarmUtils;
+import com.motazalbiruni.smartclockalarm.R;
+import com.motazalbiruni.smartclockalarm.deskclock.Utils;
+import com.motazalbiruni.smartclockalarm.deskclock.events.Events;
+import com.motazalbiruni.smartclockalarm.deskclock.timer.ExpiredTimersActivity;
+import com.motazalbiruni.smartclockalarm.deskclock.timer.TimerService;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static android.support.v4.app.NotificationCompat.Action;
-import static android.support.v4.app.NotificationCompat.Builder;
+import static androidx.core.app.NotificationCompat.Action;
+import static androidx.core.app.NotificationCompat.Builder;
 import static android.text.format.DateUtils.MINUTE_IN_MILLIS;
 import static android.text.format.DateUtils.SECOND_IN_MILLIS;
 

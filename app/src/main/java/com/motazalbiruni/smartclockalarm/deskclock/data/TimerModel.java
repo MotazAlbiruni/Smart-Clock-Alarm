@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2015 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.motazalbiruni.smartclockalarm.deskclock.data;
 
 import android.annotation.SuppressLint;
@@ -28,18 +12,18 @@ import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.net.Uri;
-import android.support.annotation.StringRes;
-import android.support.v4.app.NotificationManagerCompat;
+import androidx.annotation.StringRes;
+import androidx.core.app.NotificationManagerCompat;
 import android.util.ArraySet;
 
-import com.chen.deskclock.AlarmAlertWakeLock;
-import com.chen.deskclock.LogUtils;
-import com.chen.deskclock.R;
-import com.chen.deskclock.Utils;
-import com.chen.deskclock.events.Events;
-import com.chen.deskclock.settings.SettingsActivity;
-import com.chen.deskclock.timer.TimerKlaxon;
-import com.chen.deskclock.timer.TimerService;
+import com.motazalbiruni.smartclockalarm.deskclock.AlarmAlertWakeLock;
+import com.motazalbiruni.smartclockalarm.deskclock.LogUtils;
+import com.motazalbiruni.smartclockalarm.R;
+import com.motazalbiruni.smartclockalarm.deskclock.Utils;
+import com.motazalbiruni.smartclockalarm.deskclock.events.Events;
+import com.motazalbiruni.smartclockalarm.deskclock.settings.SettingsActivity;
+import com.motazalbiruni.smartclockalarm.deskclock.timer.TimerKlaxon;
+import com.motazalbiruni.smartclockalarm.deskclock.timer.TimerService;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -48,8 +32,8 @@ import java.util.Set;
 
 import static android.app.AlarmManager.ELAPSED_REALTIME_WAKEUP;
 import static android.text.format.DateUtils.MINUTE_IN_MILLIS;
-import static com.chen.deskclock.data.Timer.State.EXPIRED;
-import static com.chen.deskclock.data.Timer.State.RESET;
+import static com.motazalbiruni.smartclockalarm.deskclock.data.Timer.State.EXPIRED;
+import static com.motazalbiruni.smartclockalarm.deskclock.data.Timer.State.RESET;
 
 /**
  * All {@link Timer} data is accessed via this model.
